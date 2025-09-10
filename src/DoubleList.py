@@ -6,7 +6,7 @@ class DoubleList:
         self.tail:DoubleNode = None
     
     def add(self,data):
-        if self.head is None: # esto se cambia por self.is_empty()
+        if self.is_empty():
             self.head = DoubleNode(data)
             self.tail = self.head
             return
@@ -15,7 +15,7 @@ class DoubleList:
         
 
     def get(self,index): 
-        if self.head is None:# esto se cambia por self.is_empty()
+        if self.is_empty():
             return None
         if index<0 or index>=self.size():
             raise IndexError("Index out of range (index<0 or index>=self.size())")
@@ -25,7 +25,7 @@ class DoubleList:
         return current.value
 
     def size(self): 
-        if self.head is None: # esto se cambia por self.is_empty()
+        if self.is_empty():
             return 0
         count = 0
         current = self.head
