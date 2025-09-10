@@ -3,7 +3,6 @@ README
 Descripción
 -----------
 Este proyecto contiene una implementación básica de listas enlazadas dobles en Python.
-Es perfecto para quienes quieren aprender estructuras de datos sin usar las funciones avanzadas de Python.
 
 Requisitos previos
 ------------------
@@ -37,7 +36,9 @@ Configurando el entorno en VS Code
 ----------------------------------
 1. Abre VS Code y agrega el extensión pack para Python https://marketplace.visualstudio.com/items?itemName=ms-python.python
 2. selecciona **File > Open Folder** para abrir la carpeta de tu proyecto.
-3. Crea (o abre) un archivo llamado `main.py` dentro de esa carpeta.
+3. Abre el archivo llamado `test.py` dentro de la carpeta src.
 4. Si no ha sido detectado automáticamente, selecciona el intérprete de Python:
-- Abre el **Command Palette** (`Ctrl+Shift+P`) y escribe `Python: Select Interpreter`.
-- Elige la versión instalada de Python.  
+   - Abre el **Command Palette** (`Ctrl+Shift+P`) y escribe `Python: Select Interpreter`.
+   - Elige la versión instalada de Python.
+5. En el archivo `test.py` pulsa ejecutar
+6. Si no ejecuta pulsa `F5` y escoge `Python Debugger`
