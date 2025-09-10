@@ -10,9 +10,10 @@ class DoubleList:
             self.head = DoubleNode(data)
             self.tail = self.head
             return
-        self.tail.next = DoubleNode(data)
-        self.tail = self.tail.next
-        
+        newNode = DoubleNode(data)
+        self.tail.next = newNode
+        newNode.previous = self.tail
+        self.tail = newNode
 
     def get(self,index): 
         if self.is_empty():
@@ -42,14 +43,9 @@ class DoubleList:
             current = current.next
         return False
 
-
     def delete(self,data):
-        if data is None:
-            raise ValueError("The element to remove cannot be None")
-        
-        if self.head is None:
+        if self.is_empty():
             raise RuntimeError("Canot remove from an empty list")
-        
         current = self.head
         while current is not None:
             if current.value == data:
